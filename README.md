@@ -1,37 +1,35 @@
 # 基于ESP32制作的微信收款音箱
 
 #### 介绍
-通过C++开发一个微信收款音箱、客户要求外壳需要定制所以3D打印机进行外壳设计、内部采用ESP32为主控、MAX98357(音频放大器模块)与一个3W 8R的喇叭组成，分发服务区采用阿里云Ubuntu22.04进行MQTT消息分发、客户端界面采用HTML+CSS+JS
+本项目通过使用C++语言开发，制作了一款微信收款音箱。该音箱的外壳采用定制化设计，并通过3D打印机完成。内部核心采用ESP32作为主控芯片，结合MAX98357音频放大器模块和一个3W 8欧姆的扬声器，负责语音播报微信收款消息。消息分发由部署在阿里云Ubuntu 22.04系统上的MQTT服务器完成，客户端界面则采用HTML、CSS和JavaScript开发。
 
 #### 软件架构
-软件架构说明
 
+1.  主控芯片：ESP32
+2.  音频放大器模块：MAX98357
+3.  扬声器：3W 8R
+4.  消息分发服务：阿里云Ubuntu 22.04（MQTT）
+5.  前端开发：HTML + CSS + JavaScript
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  克隆本项目仓库：git clone https://gitee.com/zhangyibo7997/ESP32-Arduino/edit/master/
+2.  安装ESP32开发环境，使用Arduino IDE或PlatformIO进行开发。
+3.  在阿里云服务器上配置并运行MQTT服务。
+4.  将前端代码部署到客户端设备，确保与MQTT服务器通讯正常。
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  上传程序到ESP32，并连接MAX98357音频模块和扬声器。
+2.  配置ESP32连接Wi-Fi，并与MQTT服务器进行通信。
+3.  前端页面用于显示收款信息，同时向ESP32推送相关的语音播报指令。
+4.  每当收到微信收款消息，系统会通过扬声器自动进行语音播报。
 
 #### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1.  Fork本项目仓库。
+2.  新建分支：Feat_branch_c。
+3.  提交代码并进行代码审查。
+4.  创建Pull Request请求合并。
 
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
